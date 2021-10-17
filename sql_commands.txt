@@ -1,0 +1,3 @@
+SELECT sales.Date, products.Product_name,Shops.Shop_name,Shops.Branch_name,Sales.Unit_price,sales.Qty_sold,Sales.Total_sales
+FROM  sales JOIN Products JOIN Shops on Products.Product_Key = sales.Product_key And Shops.Branch_code = sales.Branch_code AND shops.Shop_id = sales.Shop_id
+
